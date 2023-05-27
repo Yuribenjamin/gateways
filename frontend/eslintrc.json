@@ -1,0 +1,47 @@
+{
+	"extends": [
+		"eslint:recommended",
+		"airbnb",
+		"airbnb-typescript",
+		"airbnb/hooks"
+	],
+	"parserOptions": { "project": "./tsconfig.json" },
+	"rules": {
+		"@typescript-eslint/semi": ["error", "always"],
+		"import/prefer-default-export": "off",
+		"indent": "off",
+		"no-tabs": "off",
+		"comma-dangle": [
+			"error",
+			{
+				"arrays": "never",
+				"objects": "never",
+				"imports": "never",
+				"exports": "never",
+				"functions": "never"
+			}
+		],
+		"@typescript-eslint/comma-dangle": "off",
+		"max-len": ["error", { "code": 200 }],
+		"react/function-component-definition": "off",
+		"@typescript-eslint/no-use-before-define": "off",
+		"react/react-in-jsx-scope": "off",
+		"no-console": ["error", { "allow": ["warn", "error"] }],
+		"react/no-danger": "off",
+		"import/order": "off",
+		"react/jsx-props-no-spreading": "off",
+		"no-restricted-exports": "off",
+		"react/prop-types": "off",
+		"import/no-cycle": "off",
+		"import/no-extraneous-dependencies": [
+			"error",
+			{
+				"devDependencies": true,
+				"optionalDependencies": false,
+				"peerDependencies": false
+			}
+		],
+		"react/require-default-props": "off",
+		"no-param-reassign": "off"
+	}
+}
