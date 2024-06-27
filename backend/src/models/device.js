@@ -1,12 +1,13 @@
 const mongoose = require('mongoose');
-const { v4: uuidv4 } = require('uuid');
+const { ulid } = require('ulid');
 
 const Schema = mongoose.Schema;
 
 const deviceSchema = new Schema({
-  uuid: {
+  ulid: {
     type: String,
-    default: uuidv4(),
+    default: ulid,
+    unique: true,
   },
   vendor: {
     type: String,
